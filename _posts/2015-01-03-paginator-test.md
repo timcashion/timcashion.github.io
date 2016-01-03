@@ -25,3 +25,16 @@ title: "分页测试"
 [http://segmentfault.com/a/1190000000406015](http://segmentfault.com/a/1190000000406015)
 
 ![](http://data-science-lab.github.io/images/404.jpg)
+
+    def dis(lat1,lon1,lat2,lon2):
+        R = 6373.0 # convert Earth's radius in kilometers
+        lat1 = radians(lat1)
+        lon1 = radians(lon1)
+        lat2 = radians(lat2)
+        lon2 = radians(lon2)
+        dlon = lon2 - lon1
+        dlat = lat2 - lat1
+        a = (sin(dlat/2))**2 + cos(lat1) * cos(lat2) * (sin(dlon/2))**2
+        c = 2 * atan2(sqrt(a), sqrt(1-a))
+        distance = R * c
+        return distance
