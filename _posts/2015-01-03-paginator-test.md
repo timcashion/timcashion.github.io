@@ -3,8 +3,6 @@ layout: post
 title: "分页测试"
 ---
 
-前言
-
 一个博客不可能只有几篇文章，如果所有文章全部放在一个页面中，在文章不多的情况下也许较为直观，一旦文章数量增加，不仅加大了用户需要加载的数据量，也为用户检索文章造成了障碍，所以基本上每个博客都会有文章的分页。一般的分页都是通过像JSP的模板引擎直接在从数据库中分页取出时生成动态生成页面，或者通过ajax从数据库分页取出传递到前端。但现在github+jekyll是静态的页面，没有数据库。好在jekyll支持分页功能
 
 ### 开启分页功能
@@ -20,21 +18,3 @@ title: "分页测试"
 * 分页只在html文件中起作用
 * paginate_path同时定义了需要被分页的文件，本人测试这个叫index.html，具体目录由paginate_path中的路径定义，如果定义的目录没有，则会向上寻找index.html，直到根目录的index.html，具体机制官网上没有详细说，所以还需要进一步实验
 
-## 使用分页
-
-[http://segmentfault.com/a/1190000000406015](http://segmentfault.com/a/1190000000406015)
-
-![](http://data-science-lab.github.io/images/404.jpg)
-
-    def dis(lat1,lon1,lat2,lon2):
-        R = 6373.0 # convert Earth's radius in kilometers
-        lat1 = radians(lat1)
-        lon1 = radians(lon1)
-        lat2 = radians(lat2)
-        lon2 = radians(lon2)
-        dlon = lon2 - lon1
-        dlat = lat2 - lat1
-        a = (sin(dlat/2))**2 + cos(lat1) * cos(lat2) * (sin(dlon/2))**2
-        c = 2 * atan2(sqrt(a), sqrt(1-a))
-        distance = R * c
-        return distance
