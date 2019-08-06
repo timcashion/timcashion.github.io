@@ -1,0 +1,272 @@
+---
+title: "538 Masculinity EDA"
+author: "Tim Cashion"
+date: "8/2/2019"
+output: 
+  html_document:
+    keep_md: TRUE
+---
+
+I saw this tweet on a Friday night and wanted to dive right in:
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey data science instructors! Are you looking for data that’s rich + real + realistic while still being accessible to novices? Then check out the latest update to the <a href="https://twitter.com/hashtag/fivethirtyeight?src=hash&amp;ref_src=twsrc%5Etfw">#fivethirtyeight</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package! 1/4 <a href="https://t.co/XMaeZK2kOj">pic.twitter.com/XMaeZK2kOj</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1157307444135178242?ref_src=twsrc%5Etfw">August 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+I'm going to see what I can do tonight (Friday August 2nd, 2019- 9:50 PM start time)
+
+Here is the original 538 post:
+https://fivethirtyeight.com/features/what-do-men-think-it-means-to-be-a-man/
+
+Start with a basic set-up. I haven't previously worked with the fivethirtyeight package but I'll install and load it, and the tidyverse for my standard data manipulation. 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+library(fivethirtyeight)
+ipak <- function(pkg){
+    new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+    if (length(new.pkg)) 
+        install.packages(new.pkg, dependencies = TRUE)
+    sapply(pkg, require, character.only = TRUE)
+}
+packages <- c("tidyverse", "fivethirtyeight")
+ipak(packages)
+theme_set(theme_classic())
+```
+
+
+```{r}
+?fivethirtyeight
+data("masculinity_survey")
+dat <- masculinity_survey # I replace the long title with this casue I'm lazy here. 
+head(dat)
+nrow(dat)
+ncol(dat)
+```
+
+Okay, it appears there are 189 observations across 12 variables. First column is question, and second column is responses. 
+```{r}
+unique(dat$question)
+```
+
+Alright, inspecting the data I see that there are 34 questions most with a Likert scale (1-5) score in the response, some grouping variables, and then each response has the summary statistics of the people that responded to that question. 
+
+#Demographics
+Some questions drive into demographics. If the survey is biased, I'll believe the results are less generalizable. Let's look into these first. 
+
+```{r}
+
+summary_questions <- c("age", "What is the last grade of school you completed?", "Are you:", 
+                      "Would you describe your sexual orientation as:", "Do you have any children? (Select all that apply.)", "Are you now married, widowed, divorced, separated, or have you never been married?", "Which of the following categories best describes your employment status?")
+
+summary_graph <- function(df, question_fact){
+  df %>% 
+    filter(question==question_fact) %>% 
+    ggplot(aes(x=response, y=overall *100, fill=response)) +
+    geom_col() +
+    ylab("Percent of sample") + 
+    NULL
+    
+}
+
+#Test out my new function
+summary_graph(df=dat, question_fact=summary_questions[1])
+
+#It's doing what I thought it would. 
+
+#Run it on all my demographics variables
+lapply(summary_questions, FUN=summary_graph, df=dat)
+```
+
+Our sample is likely representative because that's how they would want the survey to be. These conform to my general (and very rough) knowledge of demographics in the USA. 
+
+
+Looking at the questions more, I think I can subdivide into themes:
+* Sexuality
+* Role in society
+* Emotional health
+* Activities
+
+
+#Emotional health
+
+```{r}
+eh_questions <- c("Cry", "Get in a physical fight with another person", "Feel lonely or isolated", "See a therapist")
+
+summary_graph_nolegend <- function(df, question_fact){
+  df %>% 
+    filter(question==question_fact) %>% 
+    ggplot(aes(x=response, y=overall *100, fill=response)) +
+    geom_col() +
+    ylab("Percent of sample") + 
+    theme(legend.position="none",
+          text = element_text(size=10)) + 
+    ggtitle(question_fact) + 
+    NULL
+    
+}
+#Test out my new function
+summary_graph_nolegend(df=dat, question_fact=eh_questions[1])
+
+#It's doing what I thought it would. 
+
+#Run it on all my demographics variables
+x <- lapply(summary_questions, FUN=summary_graph_nolegend, df=dat)
+#x_legend <- cowplot::get_legend(summary_graph(df=dat, question_fact=eh_questions[1]))
+#x <- x %>% append(x_legend)
+#?plot_grid # Had to check how plotlsit variable worked. 
+cowplot::plot_grid(plotlist=x, ncol=2, rel_widths = c(1,1,0.5))
+```
+
+I want to drill down into some of the other variables for the 'lonely/isolated' question. Will need to rearrange the data a little bit for this. 
+
+```{r lonely}
+question_fact = "Feel lonely or isolated"
+
+tidy_dat <- dat %>% 
+  gather(key="demographic", value="value", -question:-overall) %>% 
+   mutate(response = fct_relevel(response, c("No answer", "Never, and not open to it", "Never, but open to it", "Rarely", "Sometimes", "Often"), after=0))
+
+#Save this as a variable so I can review later.
+#Lots of the response variables are Likert scale formatter so I order them. It doesn't affect the other variables. 
+
+tidy_dat %>% 
+  filter(question==question_fact) %>% 
+  filter(grepl(demographic, pattern="age")) %>% 
+  ggplot(aes(x=response, y=value *100, fill=response)) +
+  geom_col() +
+  ylab("Percent of sample") + 
+  theme(text = element_text(size=10),
+        axis.text.x = element_blank()) + 
+  ggtitle(question_fact) + 
+  facet_wrap(~demographic) +
+
+  NULL
+```
+
+This graph is slightly informative. It could be improved by moving the factors to some kind of ascending order that makes sense. 
+
+```{r}
+tidy_dat %>% 
+  filter(question==question_fact) %>% 
+  filter(grepl(demographic, pattern="age")) %>% 
+  ggplot(aes(x=response, y=value *100, fill=response)) +
+  geom_col() +
+  ylab("Percent of sample") + 
+  theme(text = element_text(size=10),
+        axis.text.x = element_blank()) + 
+  ggtitle(question_fact) + 
+  facet_wrap(~demographic) +
+  viridis::scale_fill_viridis(discrete=T, direction=-1) +
+  NULL
+  
+#?viridis::scale_fill_viridis() #This is a great colour palette for R. I switch direction to be -1 to get darker colours at the 'darker' end of the spectrum  and switch to discrete values
+```
+
+Here, I facet_wrap the data by age demographic and then add a colour scale that's more meaningful to the data. If we start thinking in bins, >50% of the 18-34 group is sometimes or often lonely comapred to <30% in the >=65 group. 
+
+Why is this? 
+
+#Role in Society
+```{r}
+
+question_fact <- "Ask a friend for personal advice"
+
+
+
+sub_question <- function(df=tidy_dat, question_fact=NA, demographic_pattern=NA){
+  df %>% 
+  filter(question==question_fact) %>% 
+  filter(grepl(demographic, pattern=demographic_pattern)) %>% 
+  ggplot(aes(x=response, y=value *100, fill=response)) +
+  geom_col() +
+  ylab("Percent of sample") + 
+  theme(text = element_text(size=10),
+        axis.text.x = element_blank()) + 
+  ggtitle(question_fact) + 
+  facet_wrap(~demographic) +
+  viridis::scale_fill_viridis(discrete=T, direction=1) +
+  NULL
+}
+
+
+sub_question(df=tidy_dat, question_fact="Ask a friend for personal advice", 
+             demographic_pattern = "straight")
+
+
+#I could lapply this because there's only 4 
+demographic_patterns <- c("straight", "age", "white", "children")
+
+lapply(demographic_patterns, FUN=sub_question, df=tidy_dat, question_fact="Ask a friend for personal advice")
+  
+```
+
+It seems a lot of the responses while useful on a Likert scale might be better as roughly yes or no answers. Never-Rarely seem like 0, and Sometimes and Often seem like 1s. 
+
+```{r}
+tidy_dat <- tidy_dat %>% 
+  mutate(response_binary = if_else(response=="Sometimes"|response=="Often", 1, 0))
+```
+
+
+```{r}
+#Sexuality
+
+```
+
+
+#Multi-answer questions
+Many of the questions have multiple answers possible ("Answer all that apply").
+
+```{r}
+aata_questions <- unique(dat$question)[grepl(unique(dat$question), pattern="all that apply")]
+aata_plots <- function(df, question_fact, demographic_pattern){
+  df %>% 
+    filter(question==question_fact) %>% 
+    filter(grepl(demographic, pattern=demographic_pattern)) %>% 
+    ggplot(aes(x=response, y=value *100, fill=response)) +
+    geom_col() +
+    coord_flip() + 
+    ylab("Percent of sample") + 
+    theme(text = element_text(size=10),
+          axis.text.x = element_blank(),
+          legend.position="none") + 
+    ggtitle(question_fact) + 
+    facet_wrap(~demographic) +
+    viridis::scale_fill_viridis(discrete=T, direction=1) +
+    NULL
+}
+
+aata_plots(df=tidy_dat, question=aata_questions[1], demographic_pattern="age")
+
+
+# lapply(aata_questions, FUN=aata_plots, df=tidy_dat, demographic_pattern="age")
+
+```
+
+That's all for now, but I'll update another day. 
+
+
+```{r output, include=FALSE}
+
+
+cover_plot <- tidy_dat %>% 
+  filter(question==question_fact) %>% 
+  filter(grepl(demographic, pattern="age")) %>% 
+  ggplot(aes(x=response, y=value *100, fill=response)) +
+  geom_col() +
+  ylab("Percent of sample") + 
+  theme(text = element_text(size=10),
+        axis.text.x = element_blank()) + 
+  ggtitle(question_fact) + 
+  facet_wrap(~demographic) +
+  viridis::scale_fill_viridis(discrete=T, direction=-1) +
+  NULL
+ggsave("./figs/masculinity_538.png", dpi=400)
+
+blog_info <- tibble(title= "538 Masculinity EDA",
+                    excerpt="I saw this tweet on a Friday night and wanted to dive right in",
+                    date="8/2/2019", 
+                    image_link = '<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Hey data science instructors! Are you looking for data that’s rich + real + realistic while still being accessible to novices? Then check out the latest update to the <a href="https://twitter.com/hashtag/fivethirtyeight?src=hash&amp;ref_src=twsrc%5Etfw">#fivethirtyeight</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package! 1/4 <a href="https://t.co/XMaeZK2kOj">pic.twitter.com/XMaeZK2kOj</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1157307444135178242?ref_src=twsrc%5Etfw">August 2, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>')
+write_csv(blog_info, "./metadata/masculinity_538.csv")
+
+```
+
