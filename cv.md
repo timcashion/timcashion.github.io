@@ -4,7 +4,7 @@ title: CV
 permalink: /cv/
 ---
 
-[<a href="/cv_files/cv_pdf.pdf" download="Cashion_CV.pdf">Download CV</a>]{style="float:right"}
+<a href="/cv_files/cv_pdf.pdf" download="Cashion_CV.pdf">Download CV</a>
 
 ## <a href="../projects">PROJECTS</a>
 * [Economic Value of Pacific Herring in the Strait of Georgia](https://timcashion.github.io/PacificHerring/)  
