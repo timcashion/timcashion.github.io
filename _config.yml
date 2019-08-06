@@ -54,7 +54,7 @@ baseurl: ""
 #
 
 markdown: kramdown #redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:year/:month/:title/
 paginate: 10
 paginate_path: "page:num"
