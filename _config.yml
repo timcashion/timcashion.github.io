@@ -14,7 +14,7 @@ avatar: https://avatars.githubusercontent.com/timcashion
 #
 # Flags below are optional
 #
-theme: minimal-mistakes-jekyll
+theme: jekyll-theme-minimal
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
