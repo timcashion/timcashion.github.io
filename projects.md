@@ -9,12 +9,12 @@ More coming soon!
 ## Full Projects
 [Economic Value of Pacific Herring in the Strait of Georgia](https://timcashion.github.io/PacificHerring/)   
     - [Github Repository](https://github.com/timcashion/PacificHerring/)   
-<a href="https://timcashion.github.io/PacificHerring/"><img src="/images/herring_catches.png" height=400 width=400 /></a>  
+<a href="https://timcashion.github.io/PacificHerring/"><img src="/images/herring_catches.png" height=300 width=500></a>  
 
 ___
 [IUCN Classifier for Data Deficient Fishes](https://timcashion.github.io/iucn_classifier) 
     - [Github Repository](https://github.com/timcashion/iucn_classifier/)    
-<a href="https://timcashion.github.io/iucn_classifier"><img src="/images/iucn_classifier.png" height=400 width=400 /></a>
+<a href="https://timcashion.github.io/iucn_classifier"><img src="/images/iucn_classifier.png" height=400 width=400></a>
 
 ___
 ## R packages and functions   
