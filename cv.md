@@ -17,15 +17,15 @@ University of British Columbia; Vancouver, BC
 *	My thesis research focuses on impacts of fishing gear on ecosystems and economic trade-offs associated with fisheries and their resource use  
 
 **Data Scientist Stream**  
-DataQuest 2016-2017  
+DataQuest 2016 - 2017  
 * Courses in machine learning, data visualization, and command line
 
-**Master of Environmental Studies**  	
+**Master of Environmental Studies**  	  
 September 2013 - June 2015   
 Dalhousie University; Halifax, NS (GPA 4.2/4.3)	  
 *	My thesis research focused on the environmental sustainability of fisheries’ products used in aquaculture feeds for Norwegian salmon feed and global reduction fisheries  
 
-**Bachelor of Arts**  
+**Bachelor of Arts**   
 September 2009 - April 2013  
 Huron University College at the University of Western Ontario (GPA 3.8/4.0)  
 *	Bachelor of Arts with an honors double major in Global Development Studies and Biblical Studies.
@@ -36,11 +36,13 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 * Data visualization inclduing plotly, ggplot2, matplotlib 
 
 ### WORK EXPERIENCE
-* Freelance consultant - January 2017-February 2019
+* University of British Columbia — September 2019 - Present
+  * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I. 
+* Freelance consultant — January 2017-February 2019
   * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery
-* University of British Columbia - October 2015-July 2017
+* University of British Columbia — October 2015 - July 2017
   * Senior research assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
-* Dalhousie University - January 2014- April 2015
+* Dalhousie University — January 2014 - April 2015
   * Teaching assistant (3 courses), research assistant (short-term)
 
 ### PEER-REVIEWED PUBLICATIONS
