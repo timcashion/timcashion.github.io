@@ -36,11 +36,11 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 * Data visualization inclduing plotly, ggplot2, matplotlib 
 
 ### WORK EXPERIENCE
-* Freelance consultant \hfill January 2017-February 2019
+* Freelance consultant - January 2017-February 2019
   * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery
-* University of British Columbia \hfill October 2015-July 2017
+* University of British Columbia - October 2015-July 2017
   * Senior research assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
-* Dalhousie University \hfill January 2014- April 2015
+* Dalhousie University - January 2014- April 2015
   * Teaching assistant (3 courses), research assistant (short-term)
 
 ### PEER-REVIEWED PUBLICATIONS
