@@ -33,7 +33,7 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 ### SKILLS AND LANGUAGES
 * Proficient: R, Python, SQL
 * Basic knowledge: HTML, CSS
-* Data visualization inclduing plotly, ggplot2, matplotlib 
+* Data visualization inclduing plotly, ggplot2 and plotnine, matplotlib 
 
 ### WORK EXPERIENCE
 * University of British Columbia — September 2019 - Present
