@@ -6,9 +6,15 @@ permalink: /cv/
 <a href="/cv_files/cv_pdf.pdf" download="Cashion_CV.pdf">Download CV</a>
 
 ## <a href="../projects">PROJECTS</a>
+* [Vancouver's Data Scientist Market](https://towardsdatascience.com/vancouvers-data-scientist-market-24c43307d784)  
 * [Economic Value of Pacific Herring in the Strait of Georgia](https://timcashion.github.io/PacificHerring/)  
 * [IUCN Classifier for Data Deficient Fishes](https://timcashion.github.io/iucn_classifier)
 * [IUCN Palette: An R package for customizing colours to the IUCN colour palette](https://github.com/timcashion/IUCNpalette)  
+
+### SKILLS AND LANGUAGES
+* Proficient: R, Python, SQL
+* Basic knowledge: HTML, CSS, Git
+* Data visualization inclduing plotly, ggplot2/plotnine, matplotlib 
 
 ### EDUCATION
 **Doctor of Philosophy in Resource, Environment and Sustainability**  
@@ -29,11 +35,6 @@ Dalhousie University; Halifax, NS (GPA 4.2/4.3)
 September 2009 - April 2013  
 Huron University College at the University of Western Ontario (GPA 3.8/4.0)  
 *	Bachelor of Arts with an honors double major in Global Development Studies and Biblical Studies.
-
-### SKILLS AND LANGUAGES
-* Proficient: R, Python, SQL
-* Basic knowledge: HTML, CSS
-* Data visualization inclduing plotly, ggplot2 and plotnine, matplotlib 
 
 ### WORK EXPERIENCE
 * University of British Columbia — September 2019 - Present
