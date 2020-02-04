@@ -13,9 +13,9 @@ header-includes:
   \titlespacing{\subsection}{0pt}{1pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
   \titlespacing{\subsubsection}{0pt}{1pt plus 2pt minus 1pt}{0pt plus 1pt minus 1pt}
 fontsize: 11pt
-mainfont: Calibri
-sansfont: Calibri
-monofont: Calibri
+mainfont: Helvetica
+sansfont: Helvetica
+monofont: Helvetica
 indent: FALSE
 self_contained: no
 always_allow_html: yes
@@ -35,39 +35,41 @@ knitr::opts_chunk$set(echo = TRUE)
 ### PROJECTS
 * Vancouver's Data Science Market   
   * https://towardsdatascience.com/vancouvers-data-scientist-market-24c43307d784
-* Economic Value of Pacific Herring in the Strait of Georgia - Prepared for Pacific   
+* Economic Value of Pacific Herring in the Strait of Georgia - Prepared for Pacific Wild   
   * https://timcashion.github.io/PacificHerring/
 
 ### EDUCATION  
-**Doctorate of Philosophy in Fisheries and Oceans**  
-September 2017 - 2020 (Expected) - University of British Columbia; Vancouver, BC	  
-**Data Scientist Stream**  
-DataQuest 2016-2017  
-**Master of Environmental Studies**  	
-September 2013 - June 2015 - Dalhousie University; Halifax, NS (GPA 4.2/4.3)	  
-**Bachelor of Arts - Honors Double Major in Global Development Studies and Biblical Studies**  
-September 2009 - April 2013 - Huron University College; London, ON (GPA 3.8/4.0)
+* **Doctorate of Philosophy in Fisheries and Oceans**
+  * September 2017 - 2020 (Expected) - University of British Columbia; Vancouver, BC
+  * Econometric modeling of fishery eco-labeling programs with regression discontinuity design
+  * Aligning fisheries satelite data with threatend species ranges for low-cost conservation
+* **Data Scientist in Python Stream**  
+  * 2016 - 2017 - DataQuest including over 30 courses (~240 hours)
+* **Master of Environmental Studies**
+  * September 2013 - June 2015 - Dalhousie University; Halifax, NS (GPA 4.2/4.3)
+* **Bachelor of Arts - Honors Double Major in Global Development and Biblical Studies**  
+  * September 2009 - April 2013 - Huron University College; London, ON (GPA 3.8/4.0)  
 
 ## RECENT WORK EXPERIENCE
+* Independent consultant \hfill January 2017-Present
+  * Delivered data driven analysis to NGOs focusing on fisheries economics
 * University of British Columbia \hfill September 2019-Present
-  * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I.
+  * Master's of Data Science Teaching Assistant. Courses: Communication and Argumentation; Regression I; Feature engineering.
 * University of British Columbia \hfill October 2015-July 2017
-  * Senior research assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
+  * Senior Research Assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
 
 ## SKILLS AND LANGUAGES
+* Data visualization inclduing plotly, ggplot2/plotnine, and matplotlib 
+* Causal inference, econometrics, and data wrangling
 * Proficient: R, Python, SQL
 * Basic knowledge: HTML, CSS, Git
-* Data visualization inclduing plotly, ggplot2/plotnine, and matplotlib 
-
 
 ### SELECT PUBLICATIONS
-1. [Cashion, T., de la Puente, S., Belhabib, D., Pauly, D., Zeller, D., & Sumaila, U. R. (2018). Establishing company level fishing revenue and profit losses from fisheries: A bottom-up approach. PloS one, 13(11), e0207768.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207768)
-1. [Cisneros-Montemayor, A. M., Cashion, T., Miller, D. D., Tai, T. C., Talloni-Álvarez, N., Weiskel, H. W., & Sumaila, U. R. (2018). Achieving sustainable and equitable fisheries requires nuanced policies not silver bullets. Nature ecology & evolution, 2(9), 1334.](https://www.nature.com/articles/s41559-018-0633-0)
-1.	[Cashion T., Le Manach, F., Zeller, D., Pauly, D. (2017) Most fish destined for fishmeal are food-grade fish. Fish and Fisheries.](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12209)
-1.	[Cashion, T., Hornborg, S., Ziegler, F., Hognes, E., & Tyedmers, P. (2016). Review and advancement of the marine biotic resource use metric in LCAs: a case study of Norwegian salmon feed. International Journal of Life Cycle Assessment 21(8): 1106-1120.](https://link.springer.com/article/10.1007/s11367-016-1092-y)
+1. [**Cashion, T.**, de la Puente, S., Belhabib, D., Pauly, D., Zeller, D., & Sumaila, U. R. (2018). Establishing company level fishing revenue and profit losses from fisheries: A bottom-up approach. PloS one, 13(11), e0207768.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207768)
+1.	[**Cashion T.**, Le Manach, F., Zeller, D., Pauly, D. (2017) Most fish destined for fishmeal are food-grade fish. Fish and Fisheries.](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12209)
 
 ### SELECT AWARDS
 *	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2021
-*	University of British Columbia 4-Year Fellowship – 2017-2021 
-*	Nova Scotia Graduate Scholarship- 2014
-*	Social Sciences and Humanities Research Council’s Joseph-Armand Bombardier Canada Graduate Scholarships- 2013
+*	University of British Columbia 4-Year Fellowship – 2017 - 2021 
+*	Nova Scotia Graduate Scholarship – 2014
+*	Social Sciences and Humanities Research Council’s Joseph-Armand Bombardier Canada Graduate Scholarships –  2013
