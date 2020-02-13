@@ -3,7 +3,7 @@ layout: post
 title: IUCN Palette 
 ---
 
-![](../images/iucn_classifier.png)
+![](/images/iucn_classifier.png)  
 Make your plots with the official colours used by the IUCN according to their style guide.  
 
 I wanted to give a bit more on the package I made for using IUCN palette colours in in R. I built this as I wanted to do just that, align the data I was representing with the official colours of the IUCN. The framework for the package was the Wes Anderson (package)[https://github.com/karthik/wesanderson] which made this fairly simple for me. I built some additional features to it though as people would be more likely to need only select colours. 
