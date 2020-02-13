@@ -54,7 +54,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * Independent consultant \hfill January 2017-Present
   * Delivered data driven analysis to NGOs focusing on fisheries economics
 * University of British Columbia \hfill September 2019-Present
-  * Master's of Data Science Teaching Assistant. Courses: Communication and Argumentation; Regression I; Feature engineering.
+  * Master's of Data Science Teaching Assistant. Courses: Communication and Argumentation; Regression I; Feature engineering and Model Selection.
 * University of British Columbia \hfill October 2015-July 2017
   * Senior Research Assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
 

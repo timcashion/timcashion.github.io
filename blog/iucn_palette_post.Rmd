@@ -1,0 +1,81 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "figure/",
+  fig.height = 1
+)
+```
+
+# IUCN Palette
+
+Make your plots with the official colours used by the IUCN according to their style guide.   
+
+I wanted to give a bit more on the package I made for using IUCN palette colours in in R. I built this as I wanted to do just that, align the data I was representing with the official colours of the IUCN. The framework for the package was the Wes Anderson (package)[https://github.com/karthik/wesanderson] which made this fairly simple for me. I built some additional features to it though as people would be more likely to need only select colours. 
+
+The additional features are passed as arguments to the main function 'iucn_palette' where you can exclude certain colours (exclude the colour for 'Extinct' for example), or where you can select to just use one (select only 'Endangered'). Practically, if you're only using one this isn't that different from putting the hexcode yourself, but the package does allow you to easily switch between them and access these colours when you need. 
+
+## Installation
+
+```{r, installation}
+#devtools::install_github("timcashion/IUCNpalette") 
+
+```
+
+## Usage
+
+```{r, palettes_dummy}
+library("IUCNpalette")
+# See all palettes
+names(iucn_palettes)
+
+```
+
+
+### All
+
+```{r, full-categories}
+iucn_palette()
+```
+
+### Remove some categories
+If you want to have most but remove some that aren't in your plot: 
+
+```{r, some-categories}
+iucn_palette(category="All", exclude=c("DD", "NE", "CO"))
+```
+
+
+### Single category
+If you want to only call a single category colour:
+
+```{r, single-category}
+iucn_palette(category="EN")
+```
+
+
+
+
+![](IUCN_RGB.PNG)    
+Source: Bland et al., 2016. 
+
+
+
+
+NOTE: This package is made for aligning graphics with the IUCN official category colours, but is not endorsed in any way by the IUCN.
+
+## References
+
+- Bland, L.M., Keith, D.A., Miller, R.M., Murray, N.J. and Rodríguez, J.P. (eds.) (2016).
+Guidelines for the application of IUCN Red List of Ecosystems Categories and
+Criteria, Version 1.0. Gland, Switzerland: IUCN. ix + 94pp. https://portals.iucn.org/library/sites/library/files/documents/2016-010.pdf
+
+
