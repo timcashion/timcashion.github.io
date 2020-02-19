@@ -1,6 +1,6 @@
 ---
 title: ""
-output: word_document
+output: pdf_document
 includes:
     in_header: preamble.tex
     before_body: doc-prefix.tex
@@ -60,10 +60,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## SKILLS AND LANGUAGES
 * Data visualization inclduing plotly, ggplot2/plotnine, and matplotlib 
-* Causal inference, econometrics, statistical modeling, and data wrangling
+* Causal inference, econometrics, and data wrangling
 * Languages: R, Python, SQL, HTML, CSS, Git
-* Package expertise: sklearn, pandas, numpy, tidyverse, caret
+* Package expertise: sklearn, tidyverse, pandas, numpy, 
 
 ### SELECT PUBLICATIONS
 1. [**Cashion, T.**, de la Puente, S., Belhabib, D., Pauly, D., Zeller, D., & Sumaila, U. R. (2018). Establishing company level fishing revenue and profit losses from fisheries: A bottom-up approach. PloS one, 13(11), e0207768.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207768)
 1.	[**Cashion T.**, Le Manach, F., Zeller, D., Pauly, D. (2017) Most fish destined for fishmeal are food-grade fish. Fish and Fisheries.](https://onlinelibrary.wiley.com/doi/abs/10.1111/faf.12209)
+
+### SELECT AWARDS
+*	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2021
+*	University of British Columbia 4-Year Fellowship – 2017 - 2021 
+*	Nova Scotia Graduate Scholarship – 2014
+*	Social Sciences and Humanities Research Council’s Joseph-Armand Bombardier Canada Graduate Scholarships –  2013
