@@ -12,15 +12,14 @@ permalink: /cv/
 * [IUCN Palette: An R package for customizing colours to the IUCN colour palette](https://github.com/timcashion/IUCNpalette)  
 
 ### SKILLS AND LANGUAGES
-* Proficient: R, Python, SQL
-* Basic knowledge: HTML, CSS, Git
-* Data visualization inclduing plotly, ggplot2/plotnine, matplotlib 
+* Python, SQL, R
+* Data visualization including plotly, ggplot2/plotnine, matplotlib 
 
 ### EDUCATION
 **Doctor of Philosophy in Resource, Environment and Sustainability**  
 September 2017 - Present  
 University of British Columbia; Vancouver, BC	  
-*	My thesis research focuses on impacts of fishing gear on ecosystems and economic trade-offs associated with fisheries and their resource use  
+*	My thesis research focuses on impacts of fishing gear on ecosystems and economic trade-offs associated with fisheries and their resource use
 
 **Data Scientist Stream**  
 DataQuest 2016 - 2017  
@@ -37,8 +36,10 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 *	Bachelor of Arts with an honors double major in Global Development Studies and Biblical Studies.
 
 ### WORK EXPERIENCE
-* University of British Columbia — September 2019 - Present
-  * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I. 
+* Bio Conscious Technologies - June 2020 - Present
+  * Data Science Lead, Special Projects
+* University of British Columbia — September 2019 - April 2020
+  * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference. 
 * Freelance consultant — January 2017-February 2019
   * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery
 * University of British Columbia — October 2015 - July 2017
@@ -64,6 +65,7 @@ For all publications and citation metrics, see [Google Scholar](https://scholar.
 
 ### AWARDS
 *	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2021
+* UBC MDS Teaching Assistant Award
 *	University of British Columbia 4-Year Fellowship – 2017-2021 
 *	University of British Columbia Entrance Scholarship - 2017
 *	Nova Scotia Graduate Scholarship- 2014
