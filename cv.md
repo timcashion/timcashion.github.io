@@ -13,11 +13,15 @@ permalink: /cv/
 
 ### SKILLS AND LANGUAGES
 * Python, SQL, R
-* Data visualization including plotly, ggplot2/plotnine, matplotlib 
+* Data visualization: plotly, ggplot2/plotnine, matplotlib
+* Scikit-learn, pandas, Flask, tidyverse
+* Dashboards: RShiny, dash, streamlit
+* DevOps: AWS, GCP, Docker
+
 
 ### EDUCATION
 **Doctor of Philosophy in Resource, Environment and Sustainability**  
-September 2017 - Present  
+September 2017 - April 2020  
 University of British Columbia; Vancouver, BC	  
 *	My thesis research focuses on impacts of fishing gear on ecosystems and economic trade-offs associated with fisheries and their resource use
 
@@ -36,8 +40,13 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 *	Bachelor of Arts with an honors double major in Global Development Studies and Biblical Studies.
 
 ### WORK EXPERIENCE
+* Lightspark Software - March 2021 - Present
+  * Senior Data Scientist
 * Bio Conscious Technologies - June 2020 - Present
-  * Data Science Lead, Special Projects
+  * Data Science Lead, Special Projects. 
+  * Developed and deployed an ML model to Google Cloud to alert users to high-risk events.
+  * Analyzed and modeled user data to evaluate user health outcomes after using our diabetes management app.
+  * Built a custom dashboard with Dash to keep our sales team up to date on user sign-up and use across our platforms.
 * University of British Columbia — September 2019 - April 2020
   * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference. 
 * Freelance consultant — January 2017-February 2019
@@ -64,7 +73,7 @@ For all publications and citation metrics, see [Google Scholar](https://scholar.
 
 
 ### AWARDS
-*	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2021
+*	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2020
 * UBC MDS Teaching Assistant Award
 *	University of British Columbia 4-Year Fellowship – 2017-2021 
 *	University of British Columbia Entrance Scholarship - 2017
