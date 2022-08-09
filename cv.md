@@ -45,32 +45,33 @@ March 2021 - Present
 Lightspark Software
   * Lead the development of Lightspark's modelling approaches for residential buildings
   * Automated our data ingestion, cluster modeling and report generation processes to improve our efficiency and consistency
-  * Developed the model evaluation framework used internally for testing and improvement.
-  * Built the data science backend API for our main consumer application using Flask framework.
-Tech Stack: Python, R, SQL/Postgresql, Flask
-Technologies: AWS, RDS, Docker, Mapbox
-
-**Data Science Lead, Special Projects**
-June 2020 - Present
-Bio Conscious Technologies
-  * Developed and deployed an ML model to Google Cloud to alert users to high-risk events.
-  * Analyzed and modeled user data to evaluate user health outcomes after using our diabetes management app.
-  * Built a custom dashboard with Dash to keep our sales team up to date on user sign-up and use across our platforms.
-**Master's of Data Science teaching assistant**
-September 2019 - April 2020
-University of British Columbia
-  * Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference. 
-**Freelance consultant**
-January 2017-February 2019
-  * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery
-**Senior research assistant**
-Sea Around Us Project, University of British Columbia
-October 2015 - July 2017
-  * Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
-**Teaching Assistant**
-January 2014 - April 2015
-Dalhousie University
-  * Teaching assistant (3 courses), research assistant (short-term)
+  * Developed the model evaluation framework used internally for testing and improvement.  
+  * Built the data science backend API for our main consumer application using Flask framework.  
+Tech Stack: Python, R, SQL/Postgresql, Flask  
+Technologies: AWS, RDS, Docker, Mapbox  
+  
+**Data Science Lead, Special Projects**  
+June 2020 - Present  
+Bio Conscious Technologies  
+  * Developed and deployed an ML model to Google Cloud to alert users to high-risk events.  
+  * Analyzed and modeled user data to evaluate user health outcomes after using our diabetes management app.  
+  * Built a custom dashboard with Dash to keep our sales team up to date on user sign-up and use across our platforms.  
+**Master's of Data Science teaching assistant**  
+September 2019 - April 2020  
+University of British Columbia  
+  * Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference.  
+  * Received a TA Award from the program for my teaching  
+**Freelance consultant**  
+January 2017-February 2019  
+  * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery  
+**Senior research assistant**  
+Sea Around Us Project, University of British Columbia  
+October 2015 - July 2017  
+  * Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org  
+**Teaching Assistant**  
+January 2014 - April 2015  
+Dalhousie University  
+  * Teaching assistant (3 courses), research assistant (short-term)  
 
 ### PEER-REVIEWED PUBLICATIONS
 For all publications and citation metrics, see [Google Scholar](https://scholar.google.ca/citations?user=9jHx30gAAAAJ&hl=en)
@@ -93,10 +94,10 @@ For all publications and citation metrics, see [Google Scholar](https://scholar.
 
 
 ### AWARDS
-*	Social Sciences and Humanities Research Council’s Doctoral Fellowship – 2017 - 2020
-* UBC MDS Teaching Assistant Award
-*	University of British Columbia 4-Year Fellowship – 2017-2021 
-*	University of British Columbia Entrance Scholarship - 2017
+*	Social Sciences and Humanities Research Council’s Doctoral Fellowship– 2017 - 2020
+* UBC Master's of Data Science Teaching Assistant Award
+*	University of British Columbia 4-Year Fellowship– 2017-2020
+*	University of British Columbia Entrance Scholarship- 2017
 *	Nova Scotia Graduate Scholarship- 2014
 *	Dalhousie University Faculty of Graduate Studies Scholarship- 2013
 *	Social Sciences and Humanities Research Council’s Joseph-Armand Bombardier Canada Graduate Scholarships- 2013
