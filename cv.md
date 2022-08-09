@@ -40,25 +40,45 @@ Huron University College at the University of Western Ontario (GPA 3.8/4.0)
 *	Bachelor of Arts with an honors double major in Global Development Studies and Biblical Studies.
 
 ### WORK EXPERIENCE
-* Lightspark Software - March 2021 - Present
-  * Senior Data Scientist
-* Bio Conscious Technologies - June 2020 - Present
-  * Data Science Lead, Special Projects. 
+**Senior Data Scientist**
+March 2021 - Present
+Lightspark Software
+  * Lead the development of Lightspark's modelling approaches for residential buildings
+  * Automated our data ingestion, cluster modeling and report generation processes to improve our efficiency and consistency
+  * Developed the model evaluation framework used internally for testing and improvement.
+  * Built the data science backend API for our main consumer application using Flask framework.
+Tech Stack: Python, R, SQL/Postgresql, Flask
+Technologies: AWS, RDS, Docker, Mapbox
+
+**Data Science Lead, Special Projects**
+June 2020 - Present
+Bio Conscious Technologies
   * Developed and deployed an ML model to Google Cloud to alert users to high-risk events.
   * Analyzed and modeled user data to evaluate user health outcomes after using our diabetes management app.
   * Built a custom dashboard with Dash to keep our sales team up to date on user sign-up and use across our platforms.
-* University of British Columbia — September 2019 - April 2020
-  * Master's of Data Science teaching assistant. Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference. 
-* Freelance consultant — January 2017-February 2019
+**Master's of Data Science teaching assistant**
+September 2019 - April 2020
+University of British Columbia
+  * Courses: Communication and Argumentation; Regression I; Feature and Model Selection; Experimentation and Causal Inference. 
+**Freelance consultant**
+January 2017-February 2019
   * Fisheries economics researcher for NGOs on stock risk from overfished resources and consolidation in the BC herring fishery
-* University of British Columbia — October 2015 - July 2017
-  * Senior research assistant for the *Sea Around Us* project. Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
-* Dalhousie University — January 2014 - April 2015
+**Senior research assistant**
+Sea Around Us Project, University of British Columbia
+October 2015 - July 2017
+  * Data cleaning and manipulation, updating and querying SQL database, and web scraping. www.seaaroundus.org
+**Teaching Assistant**
+January 2014 - April 2015
+Dalhousie University
   * Teaching assistant (3 courses), research assistant (short-term)
 
 ### PEER-REVIEWED PUBLICATIONS
 For all publications and citation metrics, see [Google Scholar](https://scholar.google.ca/citations?user=9jHx30gAAAAJ&hl=en)
 
+1. [Cashion, T., Nguyen, T., Ten Brink, T., Mook, A., Palacios-Abrantes, J., & Roberts, S. M. (2020). Shifting seas, shifting boundaries: Dynamic marine protected area designs for a changing climate. PloS one, 15(11), e0241771.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0241771)
+1. [Teh, Louise SL, et al. "Taking stock: a Large Marine Ecosystem perspective of socio-economic and ecological trends in East China Sea fisheries." Reviews in Fish Biology and Fisheries 30.2 (2020): 269-292.](https://link.springer.com/article/10.1007/s11160-020-09599-8)
+1. [Martinell, D. P., Cashion, T., Parker, R., & Sumaila, U. R. (2020). Closing the high seas to fisheries: Possible impacts on aquaculture. Marine Policy, 115, 103854.](https://www.sciencedirect.com/science/article/pii/S0308597X19306931?casa_token=XkVbz_h2Al0AAAAA:j-CjgPtTs14ivm4uxhjg8NVouvuBlwha_KnPpN-9e-uptXj3QaFxO120aDE1LLhYLkXA33R2Fw)
+1. [Andrews, E. J., Harper, S., Cashion, T., Palacios-Abrantes, J., Blythe, J., Daly, J., ... & Whitney, C. K. (2020). Supporting early career researchers: insights from interdisciplinary marine scientists. ICES Journal of Marine Science, 77(2), 476-485.](https://academic.oup.com/icesjms/article/77/2/476/5704875)
 1. [Coulter, A., Cashion, T., Cisneros-Montemayor, A. M., Popov, S., Tsui, G., Le Manach, F., ... & Pauly, D. (2020). Using harmonized historical catch data to infer the expansion of global tuna fisheries. Fisheries Research, 221, 105379.](https://www.sciencedirect.com/science/article/pii/S0165783619302346)
 1. [Andrews, E. J., Harper, S., Cashion, T., Palacios-Abrantes, J., Blythe, J., Daly, J., ... & Bennett, N. (2020). Supporting early career researchers: insights from interdisciplinary marine scientists. ICES Journal of Marine Science.](https://academic.oup.com/icesjms/advance-article/doi/10.1093/icesjms/fsz247/5704875)
 1. [Cashion, T., de la Puente, S., Belhabib, D., Pauly, D., Zeller, D., & Sumaila, U. R. (2018). Establishing company level fishing revenue and profit losses from fisheries: A bottom-up approach. PloS one, 13(11), e0207768.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207768)
